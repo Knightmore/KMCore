@@ -1,6 +1,7 @@
 
 
 
+
 # KMCore (Proof of Concept)
 Being bored and fed up with all those plugins that depend on x other plugins, LUA scripts and plugins that have high maintenance because their devs hardcode everything, I began to work on a framework based on Dalamud. 
 
@@ -25,15 +26,23 @@ But the GUI is still a WIP mess and venture handling has to be outsourced to its
 
 | Content           | Status | ToDo  | 
 |----------------|---------------|---------------|
-| Fates | <li>[x] Code</li><li>[x] GUI</li> | <li>Maybe refactor (less memory allocation)</li><li>Maybe adding some logic for Relic Atma farming </li>
+| Fates | <li>[x] Code</li><li>[x] GUI</li> | <li>More refactor (moving commonly used fuctions outside of plugin)</li><li>Adding Relic Atma and Relic Resistance farming </li>
 | Eureka   | <li>[ ] Code</li><li>[ ] GUI</li>  | Begin after finishing ***I Traded That/Nothing Ventured Nothing Gained***
 | Bozja   | <li>[ ] Code</li><li>[ ] GUI</li>  |  Begin after finishing Eureka module
 
 **Fates:**
-All done and working with every type. A bit wonky with Escort fates, but maybe I'll just remove and skip them completely as the time/gemstone ratio is horrible and who does them anyway, right? 
-Settings GUI could need a little revamp but well...
+All done and working. 
 
-Gemstone trade-in is handled in **I Traded That** and will be triggered once the set threshold is reached.
+ - [x] Removed Escort fates, as they are just annoying and mostly useless.
+ - [x] Gemstone trade-in  (see **I Traded That** ).
+ - [x] Added using the local mender NPC (see **Mapping The Realm**) to repair equipment for characters which don't level all needed crafting classes.
+ - [x] Added Statistic and advanced logging.
+ - [x] Multiboxing party farming mode through local IPC (windows only)
+ - [ ] Maybe some advanced party mode outside of multiboxing through relay server communication 
+
+<img src="https://raw.githubusercontent.com/Knightmore/KMCore/refs/heads/main/images/DWD%20Statistics.png" width="500" />
+
+
 
 **Eureka:**
 WIP (see table)
@@ -46,9 +55,11 @@ WIP (see table)
 
 Not really much to show here, as this is mostly just an API for the other included modules to handle any needed target location, shop inventory, etc. (straight from ingame data/not hardcoded so should work for every gameversion if Dalamud/Lumina is updated). (*[VNavmesh](https://github.com/awgil/ffxiv_navmesh/tree/master) is needed for actual movement*). 
 
+Basically it can be used to find and use any shop NPC, mender or a direct way to any given destination (across territories) either through positional data or just using the map flag.
+
 Includes:
 - Aetherytes and their connections.
-- Connections between territories
+- Connections between territories 
 - Vendor locations and their shop list
 - Mender locations
 - Whatever the other modules need
@@ -63,8 +74,10 @@ Code is mostly done, still undecided on how to set up the GUI, as there is not r
 - [x] Code
 - [ ] GUI
 
-Code is done for Gem- and Tomestones. Hunt Marks will be done when **On Your Mark** is complete. Collectables will be done last. It's the easiest one, but cba right now to deal with gathering/crafting to test it. 
+Code is done for Gem-, Tomestones and GCs. Hunt Marks will be done when **On Your Mark** is complete. Collectables will be done last. It's the easiest one, but cba right now to deal with gathering/crafting to test it. 
 GUI will be complete with it too. Still undecided if there should be added more like Gil/Tribal/whatever shops.
+
+<img src="https://raw.githubusercontent.com/Knightmore/KMCore/refs/heads/main/images/ITradedThat.png" width="500" />
 
 ## Out of Sight *(Sightseeing Log)*
 - [ ] Code
