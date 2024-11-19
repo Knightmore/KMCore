@@ -87,6 +87,12 @@ Going to add gil shop soon (and update the preview picture below) as all needed 
 Code is mostly done for the basics like sending out on selected ventures, tracking retainers and moving to prefered or nearest summoning bell to resend.
 I will have to add another module to also automate submarines (there are still only lua scripts and no proper plugins around...)  and make all of this work for sublords. Time to fire up some FCs and join their ranks I guess!?
 
+## Out of Hiding *(Player/Retainer Database)*
+- [X] Code
+- [ ] GUI (Webservice?)
+
+Tracking all players with their alt characters and retainers. Why? Because f***'em, that's why... also nice to keep track of market bot alts and their main account or toxic players and their other characters.
+
 # Mammeteer *(Scheduler)*
 - [ ] Code
 - [ ] GUI
