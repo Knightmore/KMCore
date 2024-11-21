@@ -3,7 +3,7 @@ Being bored and fed up with all those plugins that depend on x other plugins, LU
 
 I don't know if/when I will release it to the public as this is/was just a private hobby project, so this is just a showcase for now. Tending to feature creep and forgetting some other WIP modules, the following list isn't complete.
 
-*All included module names are (based on) ingame achievements or titles as I'm horrible with naming projects...*
+*All/most included module names are (based on) ingame achievements or titles as I'm horrible with naming projects...*
 
 ## DisHonest Gillionaire *(Marketboard)*
 - [x] Code
@@ -87,17 +87,31 @@ Going to add gil shop soon (and update the preview picture below) as all needed 
 Code is mostly done for the basics like sending out on selected ventures, tracking retainers and moving to prefered or nearest summoning bell to resend.
 I will have to add another module to also automate submarines (there are still only lua scripts and no proper plugins around...)  and make all of this work for sublords. Time to fire up some FCs and join their ranks I guess!?
 
+## Voyager *(Submersibles)*
+- [X] Code
+- [ ] GUI (Mostly only for preparatory options. 
+
+Includes:
+- Leveling and unlocking until OJ farm
+- Automatic repair and component swap for SSSS -> SSUS -> SSUC (or WSUC if preferred)
+- Stock up of Ceruleum Tanks if below set threshold.
+- Statistics (gil/voyage, avg. duration, etc.)
+
 ## Out of Hiding *(Player/Retainer Database)*
 - [X] Code
 - [ ] GUI (Webservice?)
 
 Tracking all players with their alt characters and retainers. Why? Because f***'em, that's why... also nice to keep track of market bot alts and their main account or toxic players and their other characters.
 
-# Mammeteer *(Scheduler)*
+## Mammeteer *(Scheduler)*
 - [ ] Code
 - [ ] GUI
 
 Code and GUI are partially done, but I'm not happy with it yet. You can set up tasks for the whole day in minimum 30 minute parts and just go AFK to let it do its thing, but until the other modules are done this will be a WIP.
 
-# Experimental Stuff and Utilities
-Includes things like FC Chest sorting, Auto Re-/Login, Configuration of all modules per character or accountwide.
+## Experimental Stuff and Utilities
+Includes things like 
+- FC Chest sorting
+- Auto Re-/Login
+- A4N Undersync farm/mass exchange (together with *I Traded That* and mostly for stockpiling Ceruleum Tanks. See *Voyager*)
+- Configuration of all modules per character or accountwide.
