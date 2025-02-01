@@ -80,28 +80,19 @@ Going to add gil shop soon (and update the preview picture below) as all needed 
 
 <img src="https://raw.githubusercontent.com/Knightmore/KMCore/refs/heads/main/images/ITradedThat.png" width="500" />
 
-## Nothing Ventured Nothing Gained *(Retainer Ventures)*
-- [X] Code
-- [ ] GUI
-
-Code is mostly done for the basics like sending out on selected ventures, tracking retainers and moving to prefered or nearest summoning bell to resend.
-I will have to add another module to also automate submarines (there are still only lua scripts and no proper plugins around...)  and make all of this work for sublords. Time to fire up some FCs and join their ranks I guess!?
-
 ## Voyager *(Submersibles)*
-- [X] Code
+- [ ] Code
 - [ ] GUI (Mostly only for preparatory options. 
 
+I decided to skip Retainer Ventures and most of submersible stuff as [AutoRetainer](https://github.com/PunishXIV/AutoRetainer/) does a perfect job for those needs, so why reinvent all the stuff that Limiana already figured out perfectly?
+
+This will just be an addon for AR to get automated registration of new subs, parts swap, venture plan changes, tank restock and GC turn-in for FC points running.
+
 Includes:
+- Register new subs
 - Leveling and unlocking until OJ farm
 - Automatic repair and component swap for SSSS -> SSUS -> SSUC (or WSUC if preferred)
 - Stock up of Ceruleum Tanks if below set threshold.
-- Statistics (gil/voyage, avg. duration, etc.)
-
-## Out of Hiding *(Player/Retainer Database)*
-- [X] Code
-- [ ] GUI (Webservice?)
-
-Tracking all players with their alt characters and retainers. Why? Because f***'em, that's why... also nice to keep track of market bot alts and their main account or toxic players and their other characters.
 
 ## Mammeteer *(Scheduler)*
 - [ ] Code
@@ -113,5 +104,5 @@ Code and GUI are partially done, but I'm not happy with it yet. You can set up t
 Includes things like 
 - FC Chest sorting
 - Auto Re-/Login
-- A4N Undersync farm/mass exchange (together with *I Traded That* and mostly for stockpiling Ceruleum Tanks. See *Voyager*)
+- A4N Undersync farm/mass exchange (*SE banned some A4N botters recently. So nothing that should really be published.*)
 - Configuration of all modules per character or accountwide.
